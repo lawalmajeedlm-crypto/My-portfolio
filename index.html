@@ -1,75 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Lawal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawal Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo"data-aos="zoom-in"data-aos-duration="1000">
-                 <span>Lawal</span>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        <span>LAWAL ABDULMAJEED OPEYEMI</span>
+      </div>
+      <div class="links">
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About</a></div>
+        <div class="link"><a href="#skills">Skills</a></div>
+        <div class="link"><a href="#services">Services</a></div>
+        <div class="link"><a href="#projects">Projects</a></div>
+        <div class="link contact-btn"><a href="#contact">Contact</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="main-container">
+      <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+        <img src="emjay.jpg" alt="Portrait of Lawal, Software Engineer" loading="lazy">
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-left" data-aos-duration="1000">Hey I'm <span>Abdulmajeed</span></h1>
+        <div class="typewriter" data-aos="fade-right" data-aos-duration="1000">I'm a <span></span></div>
+        <p data-aos="flip-up" data-aos-duration="1000">
+          Quality-focused and results-oriented full-stack software engineer with extensive experience in agile methodologies. Skilled in .NET, React, and cloud technologies, I thrive in collaborative environments and love solving complex technical challenges.
+        </p>
+        <div class="social-links" data-aos="flip-down" data-aos-duration="1200">
+          <a href="https://github.com/lawalmajeedlm-crypto" target="_blank"><i class="fa-brands fa-github" aria-label="GitHub"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook" aria-label="Facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin" aria-label="LinkedIn"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter" aria-label="Twitter/X"></i></a>
         </div>
-        <div class="links">
-            <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="100"><a href="#">Home</a></div>    
-            <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="200"><a href="#">About</a></div>
-            <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="300"><a href="#">Skills</a></div>
-            <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="400"><a href="#">Services</a></div>
-            <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="500"><a href="#">Blogs</a></div>
-            <div class="link contact-btn"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="600"><a href="#">Contact US</a></div>
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+          <a href="Lawal Abdulmajeed vc..pdf" download>
+            <button>Download CV</button>
+          </a>
         </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-         </div>
-         <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Services</a>
-                <a href="">Blogs</a>
-                <a href="">Contact Us</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-         </div>
-         </nav>
-         <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right"data-aos-duration="2500">
-                    <img src="emjay.jpg" alt="user">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1000"data-aos-duration="800">Hey I'm <span>Lawal</span></h1>
-                <div class="typewriter" data-aos="fade-right"data-aos-duration="1000"data-aos-duration="1000">I'm a <span></span></div>
-               <p data-aos="flip-up" data-aos-duration="1000" data-aos-duration="1000">Highly motivated and detail-oriented software engineer with 6 years of experience in designing, developing, and deploying innovative software solutions. Proficient in a range of programming languages, I excel in collaborative environments and thrive on tackling complex technical challenges.</p>
-                <div class="social-links" data-aos="flip-down"data-aos-duration="1000"data-aos-duration="1200">
-                   <a href="#"><i class="fa-brands fa-github"></i></a>
-                   <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                   <a href="#"><i class="fa-brands fa-x twitter"></i></a>
-                 </div>
-                 <div class="btn" data-aos="zoom-out-left"data-aos-duration="1000" data-aos-delay="1300">
-                    <button>Download CV</button>
-                </div>
-             </div>
-         </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects">
+  <div class="projects-container">
+    <h2 data-aos="fade-up" data-aos-duration="1000">Featured Projects</h2>
+    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      Here are some of my personal and professional projects showcasing my skills in .NET, React, and cloud technologies.
+    </p>
+
+    <div class="projects-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card" data-aos="zoom-in" data-aos-duration="1000">
+        <h3>E-commerce App</h3>
+        <p>
+          A microservice-based ecommerce application built with ASP.NET 8 Web APIs and MVC. Features include user registration, cart management, coupon application, and role-based authorization.
+        </p>
+        <a href="https://github.com/lawalmajeedlm-crypto/E-commerce" target="_blank" class="project-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <h3>Library Management System API</h3>
+        <p>
+          A monolithic API for managing library operations with role-based authorization, built using ASP.NET Web API, Entity Framework Core, and Docker.
+        </p>
+        <a href="https://github.com/lawalmajeedlm-crypto/LibraryManagementSystemAPI" target="_blank" class="project-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="skills-container">
+    <h2 data-aos="fade-up" data-aos-duration="1000">My Skills</h2>
+    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      Here are the technologies and tools I work with, along with my proficiency levels.
+    </p>
+
+    <div class="skills-grid">
+      <!-- Skill 1 -->
+      <div class="skill" data-aos="fade-right" data-aos-duration="1000">
+        <i class="fa-solid fa-code"></i>
+        <h3>C# / .NET</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;">90%</div>
+        </div>
+      </div>
+
+      <!-- Skill 2 -->
+      <div class="skill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <i class="fa-brands fa-react"></i>
+        <h3>React.js</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;">85%</div>
+        </div>
+      </div>
+
+      <!-- Skill 3 -->
+      <div class="skill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+        <i class="fa-solid fa-database"></i>
+        <h3>SQL / Databases</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;">80%</div>
+        </div>
+      </div>
+
+      <!-- Skill 4 -->
+      <div class="skill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+        <i class="fa-brands fa-docker"></i>
+        <h3>Docker</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;">75%</div>
+        </div>
+      </div>
+
+      <!-- Skill 5 -->
+      <div class="skill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+        <i class="fa-brands fa-aws"></i>
+        <h3>AWS Cloud</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;">70%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="contact-container">
+    <h2 data-aos="fade-up" data-aos-duration="1000">Get In Touch</h2>
+    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      Interested in working together or have a question? Feel free to reach out using the form below.
+    </p>
+
+    <form class="contact-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Lawal Abdulmajeed. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     AOS.init();
-    </script>
-    <script>
-        function hamburg() {
-            const navbar= document.querySelector(".dropdown")
-            navbar.style.transform ="translateY(0px)"
-        }
-        function cancel() {
-            const navbar= document.querySelector(".dropdown")
-            navbar.style.transform ="translateY(-500px)"
-        }
-    </script>
+    function hamburg() {
+      document.querySelector(".dropdown").style.transform = "translateY(0)";
+    }
+    function cancel() {
+      document.querySelector(".dropdown").style.transform = "translateY(-100%)";
+    }
+
+    // Typewriter effect
+    const roles = ["Full-Stack Developer", "Software Engineer", "Problem Solver"];
+    let i = 0;
+    const span = document.querySelector(".typewriter span");
+    setInterval(() => {
+      span.textContent = roles[i];
+      i = (i + 1) % roles.length;
+    }, 2000);
+  </script>
 </body>
 </html>
